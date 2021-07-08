@@ -10,7 +10,7 @@ import logging
 from thehive4py.api import TheHiveApi
 from thehive4py.models import Alert, AlertArtifact, CustomFieldHelper
 from flask import Flask, Response, render_template, request, flash, redirect, url_for
-from config import Config
+from conf.config import Config
 
 app = Flask(__name__)
 app.config.from_object(Config)
