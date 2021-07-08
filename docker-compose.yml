@@ -1,0 +1,12 @@
+version: "3"
+
+
+services:
+
+    dockerproxy-ro:
+        build: .
+        container_name: "graylog2thehive"
+        ports:
+          - 127.0.0.1:5000:5000
+        volumes:
+          - "./log:/var/log"
